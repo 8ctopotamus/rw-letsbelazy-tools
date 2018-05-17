@@ -1,8 +1,17 @@
 <template>
-  <v-layout row wrap justify-center id="wrapper">
-    <h1>Web Screenshot</h1>
-    <p>Take a fullpage screenshot of any web page!</p>
-  </v-layout>
+  <div class="web-screenshot">
+    <h1 class="display-1">Web Screenshot</h1>
+    <h4 class="headline">Take a fullpage screenshot of any web page.</h4>
+    <v-divider class="mt-4 mb-4" />
+    <v-layout row wrap justify-center id="wrapper">
+      <v-flex>
+        input url
+        height
+        width of screenshot
+      </v-flex>
+      <v-flex>Screenshot Preview</v-flex>
+    </v-layout>
+  </div>
 </template>
 
 <script>
@@ -12,19 +21,5 @@
 </script>
 
 <style scoped>
-  .centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .logo
-  {
-    max-width: 100%;
-  }
-
-  .link-btn
-  {
-    width: 150px;
-  }
 </style>

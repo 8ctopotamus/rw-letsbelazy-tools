@@ -2,7 +2,7 @@
   <v-layout column id="wrapper">
     <v-flex xs12 class="text-xs-center">
       <img id="logo" class="logo" src="/static/rw-logo.svg" alt="Real wealth" />
-      <h4>Welcome to the <em>Real</em> Wealth <sup>&reg;</sup>'s <em>Let's be lazy</em> convenience tools GUI!</h4>
+      <h1 class="display-1 mt-4 mb-5"><small>Welcomes you to the</small><br/> <em>~ Let's be lazy ~</em><br> <small>convenience tools GUI!</small></h1>
     </v-flex>
     <v-flex xs12 class="mt-4">
       <system-information></system-information>
@@ -42,7 +42,7 @@
 <style scoped>
   .logo
   {
-    max-width: 75%;
+    max-width: 50%;
   }
   .link-btn
   {

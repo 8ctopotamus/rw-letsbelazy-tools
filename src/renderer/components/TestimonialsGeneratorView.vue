@@ -1,25 +1,23 @@
 <template>
-  <div class="testimonials-generator">
-    <h1>Testimonials Generator</h1>
-    <v-layout column justify-center>
+  <div class="web-screenshot">
+    <h1 class="display-1">Testimonials Generator</h1>
+    <h4 class="headline">Generate testimonial shortcodes for Real Wealth Marketing.</h4>
+    <v-divider class="mt-4 mb-4" />
+    <v-layout row wrap justify-center id="wrapper">
       <v-flex>
-        <blockquote class="text-xs-center">
-          &#8220;First, solve the problem. Then, write the code.&#8221;
-          <footer>
-            <small>
-              <em>&mdash;John Johnson</em>
-            </small>
-          </footer>
-        </blockquote>
+        Upload Excel Spreadsheet.
       </v-flex>
+      <v-flex>Shortcodes output</v-flex>
     </v-layout>
   </div>
 </template>
 
-<style scoped>
-  img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+<script>
+  export default {
+    name: 'webScreenshot'
   }
+</script>
+
+<style scoped>
+
 </style>
