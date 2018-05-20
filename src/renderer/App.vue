@@ -83,7 +83,7 @@
       </v-navigation-drawer> -->
       <v-footer :fixed="fixed" app class="indigo lighten-4">
         <v-spacer></v-spacer>
-        <span @click="$electron.shell.openExternal('https://zylocod.es/')" style="margin-right: 2%;">Created by Zylo, LLC</span>
+        <span @click="$electron.shell.openExternal('https://zylocod.es/')" style="margin-right: 2%;">Created by Zylo, LLC </span>
       </v-footer>
     </v-app>
   </div>
