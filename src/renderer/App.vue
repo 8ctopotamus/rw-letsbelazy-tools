@@ -59,6 +59,7 @@
         </v-btn> -->
       </v-toolbar>
       <v-content class="indigo lighten-5">
+        <v-progress-linear :indeterminate="true"></v-progress-linear>
         <v-container fluid ><!-- fill-height -->
           <v-slide-y-transition mode="out-in">
             <router-view></router-view>
