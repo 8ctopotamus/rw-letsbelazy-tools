@@ -3,7 +3,7 @@
     <v-flex xs12 class="text-xs-center">
       <img id="logo" class="logo" src="/static/rw-logo.svg" alt="Real wealth" />
       <h1 class="display-1 mt-4 mb-5"><small>Welcomes you to the</small><br/> <em>~ Let's be lazy ~</em><br> <small>convenience tools GUI!</small></h1>
-      <small>Version 1</small>
+      <small>Version 0.01-beta</small>
     </v-flex>
     <v-flex xs12 class="mt-4">
       <system-information></system-information>

@@ -20,8 +20,8 @@
     "postinstall": "npm run lint:fix"
   },
   "build": {
-    "productName": "rw-letsbelazy-toolbelt",
-    "appId": "org.simulatedgreg.electron-vue",
+    "productName": "rw-letsbelazy-tools",
+    "appId": "es.zylocod.rw-letsbelazy-tools",
     "directories": {
       "output": "build"
     },
