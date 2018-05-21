@@ -3,17 +3,16 @@
     <h1 class="display-1">Web Screenshot</h1>
     <h4 class="headline">Take a fullpage screenshot of any web page.</h4>
     <v-divider class="mt-4 mb-4" />
-    <v-layout justify-space-between>
-      <v-flex sm4>
-        <h3>Settings</h3>
+    <v-layout>
+      <v-flex>
         <v-text-field v-model="url" label="Website URL" name="url" />
         <v-text-field v-model.number="width" label="Width" suffix="px" />
-        <v-slider v-model.number="width" step="10" max="3000" />
+        <v-slider v-model.number="width" step="1" max="3000" />
         <v-text-field v-model.number="height" label="Height" suffix="px" />
-        <v-slider v-model="height" step="10" max="3000" />
+        <v-slider v-model="height" step="1" max="3000" />
         <v-btn raised color="primary" @click="takeScreenshot">Take Screenshot</v-btn>
       </v-flex>
-      <v-flex sm8>
+      <v-flex>
         <h3>Preview</h3>
         <p v-if="loading"><em>Loading...</em></p>
         <webview
@@ -38,8 +37,8 @@
       return {
         loading: false,
         url: 'https://zylocod.es',
-        width: 700,
-        height: 500
+        width: 850,
+        height: 700
       }
     },
     methods: {

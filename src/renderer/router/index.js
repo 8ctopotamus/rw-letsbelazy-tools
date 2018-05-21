@@ -26,6 +26,11 @@ export default new Router({
       component: require('@/components/SocialPostsGeneratorView').default
     },
     {
+      path: '/webinar-registration',
+      name: 'webinar-registration',
+      component: require('@/components/webinarRegistrationView').default
+    },
+    {
       path: '*',
       redirect: '/'
     }

@@ -61,7 +61,8 @@
     "vue-electron": "^1.0.6",
     "vue-router": "^2.5.3",
     "vuetify": "1.0.0",
-    "vuex": "^2.3.1"
+    "vuex": "^2.3.1",
+    "xlsx": "^0.12.13"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -82,6 +83,8 @@
     "electron": "^1.7.5",
     "electron-builder": "^19.19.1",
     "electron-debug": "^1.4.0",
+    "electron-devtools-installer": "^2.2.4",
+    "electron-prebuilt-compile": "^2.0.0",
     "eslint": "^4.4.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",

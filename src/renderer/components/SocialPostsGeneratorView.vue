@@ -27,7 +27,6 @@
           label="Output Text"
           multi-line
           solo
-
         ></v-text-field>
       </v-flex>
     </v-layout>

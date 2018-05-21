@@ -58,8 +58,8 @@
           <v-icon>menu</v-icon>
         </v-btn> -->
       </v-toolbar>
+      <v-progress-linear :indeterminate="true"></v-progress-linear>
       <v-content class="indigo lighten-5">
-        <v-progress-linear :indeterminate="true"></v-progress-linear>
         <v-container fluid ><!-- fill-height -->
           <v-slide-y-transition mode="out-in">
             <router-view></router-view>
@@ -101,7 +101,8 @@
         { icon: 'apps', title: 'Welcome', to: '/' },
         { icon: 'camera_enhance', title: 'Web Screenshot', to: '/web-screenshot' },
         { icon: 'format_quote', title: 'Testimonials Generator', to: '/testimonials-generator' },
-        { icon: 'share', title: 'Social Posts Generator', to: '/social-posts-generator' }
+        { icon: 'share', title: 'Social Posts Generator', to: '/social-posts-generator' },
+        { icon: 'how_to_reg', title: 'Webinar Registration', to: '/webinar-registration' }
       ],
       miniVariant: true,
       right: true,
