@@ -44,7 +44,7 @@
     data () {
       return {
         loading: false,
-        url: 'https://zylocod.es',
+        url: 'https://realwealthmedia.com',
         width: 850,
         height: 700
       }
@@ -70,7 +70,6 @@
         // Creates an image of the visible area of the WebView
         function captureWeb() {
             getWebviewMeta(function (webviewMeta) {
-
                 // builds a rectangle whose dimensions are scaled based on the display scale factor
                 // this rectangle represents the scaled viewable window in the Electron application for the WebView
                 let captureRect = {
@@ -98,7 +97,7 @@
                             console.log("You didn't save the file")
                             return
                           }
-                          fs.writeFile(fileName, resizedJpgFile, (err) => {
+                          fs.writeFile(fileName + '.jpg', resizedJpgFile, (err) => {
                             if (err){
                               alert("An error ocurred creating the file "+ err.message)
                             }

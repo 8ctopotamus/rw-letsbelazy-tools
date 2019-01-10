@@ -101,8 +101,7 @@
         { icon: 'apps', title: 'Welcome', to: '/' },
         { icon: 'camera_enhance', title: 'Web Screenshot', to: '/web-screenshot' },
         { icon: 'format_quote', title: 'Testimonials Generator', to: '/testimonials-generator' },
-        { icon: 'share', title: 'Social Posts Generator', to: '/social-posts-generator' },
-        { icon: 'how_to_reg', title: 'Webinar Registration', to: '/webinar-registration' }
+        { icon: 'share', title: 'Social Posts Generator', to: '/social-posts-generator' }
       ],
       miniVariant: true,
       right: true,
