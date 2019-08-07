@@ -1,4 +1,3 @@
-/* eslint-disable */
 const processText = (data) => {
   const lines = data.split(/\r?\n/)
   // this content always comes last

@@ -1,36 +1,31 @@
 <template>
-  <div class="web-screenshot">
-    <v-layout row wrap>
-      <v-flex md10>
-        <h1 class="display-1">Web Screenshot</h1>
-        <h4 class="headline">Take a fullpage screenshot of any web page.</h4>
-      </v-flex>
-      <v-flex md2 class="text-lg-right">
-        <v-progress-circular v-if="loading" :size="70" :width="7" indeterminate color="purple"></v-progress-circular>
-      </v-flex>
-    </v-layout>
-    <v-divider class="mt-4 mb-4" />
-    <v-layout row wrap>
-      <v-flex md2>
-        <v-text-field v-model="url" label="Website URL" name="url" />
-        <v-text-field v-model.number="width" label="Width" suffix="px" />
-        <v-slider v-model.number="width" step="1" max="3000" />
-        <v-text-field v-model.number="height" label="Height" suffix="px" />
-        <v-slider v-model.number="height" step="1" max="3000" />
-        <v-btn raised color="primary" @click="takeScreenshot">Take Screenshot</v-btn>
-      </v-flex>
-      <v-spacer />
-      <v-flex md9>
-        <h3>Preview</h3>
-        <webview ref="screenshotPreview"
-          @did-start-loading="loading = true"
-          @did-stop-loading="loading = false"
-          :src="url"
-          :style="`display:inline-flex; width: ${width}px; height: ${height}px;`"
-          disablewebsecurity
-        />
-      </v-flex>
-    </v-layout>
+  <div class="web-screenshot">  
+    <h1 class="display-1">Web Screenshot</h1>
+    <h4 class="headline">Take a fullpage screenshot of any web page.</h4>
+    <p v-if="loading">Loading...</p> 
+    
+    <label>Website URL</label>
+    <input type="text" v-model="url" name="url" />
+
+    <label>Width</label>
+    <input type="text" v-model.number="width" name="width" />
+    <input type="range" v-model.number="width" step="1" max="3000" />
+    
+    <label>Height</label>
+    <input type="text" v-model.number="height" name="height" />
+    <input type="range" v-model.number="height" step="1" max="3000" />
+    
+
+    <button@click="takeScreenshot">Take Screenshot</button>
+    
+    <h3>Preview</h3>
+    <webview ref="screenshotPreview"
+      @did-start-loading="loading = true"
+      @did-stop-loading="loading = false"
+      :src="url"
+      :style="`display:inline-flex; width: ${width}px; height: ${height}px;`"
+      disablewebsecurity
+    />
   </div>
 </template>
 

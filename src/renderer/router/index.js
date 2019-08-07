@@ -8,7 +8,7 @@ export default new Router({
     {
       path: '/',
       name: 'welcome-view',
-      component: require('@/components/WelcomeView').default
+      component: require('@/components/LandingPage').default
     },
     {
       path: '/web-screenshot',
